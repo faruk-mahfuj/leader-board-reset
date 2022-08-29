@@ -39,6 +39,7 @@ hr {
     color: #562EFF;
     font-size: 24px;
     margin-top: 3px;
+    padding-top: 20px;
     margin-bottom: 40px;
 }
 
@@ -105,8 +106,16 @@ hr {
 
 .course {
     box-shadow: 0px 5.342289924621582px 13.35572338104248px 0px rgba(0, 0, 0, 0.05);
-
     padding: 15px;
+}
+
+.course-title {
+    color: #1E1E1E;
+    font-size: 20px;
+}
+
+.course-instructor {
+    color: #ED6B4F;
 }
 
 .course .course-banner img {
@@ -155,4 +164,110 @@ hr {
     color: rgba(174, 174, 174, 1);
     opacity: 0.25;
     font-size: 12px;
+}
+
+/* Media Queries */
+
+/* Mobile Devices */
+
+@media only screen and (max-width:576px) {
+    .container {
+        width: 100%;
+    }
+
+    .top-players {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .players {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+
+    .top-blogs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .blog {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .blog-info {
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+    }
+
+    .courses {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .course-banner {
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+}
+
+/* Tablet Devices */
+
+@media only screen and (min-width:567px) and (max-width:992px) {
+    .container {
+        width: 100%;
+        margin-top: 0px;
+    }
+
+    .players {
+        padding: 0px 20px;
+    }
+
+    .blog {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blog-info {
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .courses {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .course-banner {
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+
 }
